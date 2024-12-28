@@ -231,10 +231,10 @@ function success({ coords }) {
     `;
 
     forecast03.innerHTML = `
-    <p>${data.list[11].dt_txt}</p>
-    <h2>${data.list[11].weather[0].description}</h2>
-    <p>${data.list[11].weather[0].main}</p>
-    <h3> ${data.list[11].main.feels_like}°C</h3>
+    <p>${data.list[8].dt_txt}</p>
+    <h2>${data.list[8].weather[0].description}</h2>
+    <p>${data.list[8].weather[0].main}</p>
+    <h3> ${data.list[8].main.feels_like}°C</h3>
   `;
     });
     //기타기능들
