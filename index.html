@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokdox-weather for you</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/gridlex@1.0.4/dist/gridlex.min.css" rel="stylesheet">
+</head>
+<body>
+    <a id="att" onclick="scl()">이런!예외처리 되었습니다.</a>
+    <progress></progress>
+    <br>
+    <div id = "time" class = "openmeteoc"></div>
+    <h1 class = "h1">Dokdox-weather for you</h1>
+    <p id="pp">지역: 기기 내부 GPS 기반</p>
+    <p id = "title">Dokdox|weather for you</p>
+    <input type="text" id="searchvalue" placeholder="지역명을 영어로 임력(예:busan,ulsan,seoul 등...)" onkeypress="search()">
+    <button onclick="search()">->></button>
+    <br>
+    <br>
+    <div id="searchresult"></div>
+    <Br>
+    <div id="a">
+        <div id="result"></div>
+        <br>
+
+            <div class = "grid">
+                <div class = "he openmeteoc" id = "openmeteoc"></div>
+                <div class = "he openmeteoc" id = "openmeteocr" ></div>
+            </div>
+            <div class="openmeteoc" id = "snowfall"></div>
+    
+       <br>
+        <div id="moreresult"></div>
+        <h2>공기질</h2>
+        <div id="air" class="air"></div>
+        <br>
+        <h2>예측</h2>
+    
+    
+        <div id = "forecast0" class ="forecast"></div>
+        <div id = "forecast03" class ="forecast"></div>
+        <div id="forecast1" class="forecast"></div>
+        <br>
+        <div id="forecast2" class="forecast"></div>
+        <br>
+        <div id="forecast3" class="forecast"></div>
+        <br>
+        <div id="forecast4" class="forecast"></div>
+
+
+    </div>
+    <p>앱을 설치하려면 PWA로 시작하세요. dokdoxpwa는 현재 지원 중입니다!</p>
+    <div class="forecast">
+        <h3>오픈소스 기반 Dokdox 예보를 확인하기:</h3>
+        <a href="https://66f3fc4c78c61400d59168c9--dokdox.netlify.app">지금 시작하기</a>
+    </div>
+    <p>Deployed by MIT License, powered by contributors around the world!</p>
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        // 페이지 로드 시 알림 실행
+        window.addEventListener('load', function() {
+            if (Notification.permission === 'granted') {
+                // 알림 권한이 이미 허용된 경우
+                new Notification('Dokdox Weather 알림', {
+                    body: '현재 날씨보기-dokdox.com 에서 확인해보세요.지금 당징 무료날씨정보를 확인할수 있습니다1',
+                });
+            } else if (Notification.permission !== 'denied') {
+                // 알림 권한 요청하기
+                Notification.requestPermission().then(permission => {
+                    if (permission === 'granted') {
+                        new Notification('Dokdox Weather 알림', {
+                            body: '오늘의 날씨를 확인해보세요!',
+                            
+                        });
+                    }
+                });
+            }
+        });
+
+        // 알림 버튼 기능
+
+    </script>
+</body>
+</html>
