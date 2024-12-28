@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/gridlex@1.0.4/dist/gridlex.min.css" rel="stylesheet">
 </head>
 <body>
-    <button id = "darkmode">다크모드를 사용하기</button>
+    <button id = "darkmode">다크모드시작</button>
     <a id="att" onclick="scl()"></a>
     <progress></progress>
     <br>
@@ -62,27 +62,9 @@
 
     <script src="script.js"></script>
     <script>
-        // 페이지 로드 시 알림 실행
-        window.addEventListener('load', function() {
-            if (Notification.permission === 'granted') {
-                // 알림 권한이 이미 허용된 경우
-                new Notification('Dokdox Weather 알림', {
-                    body: '현재 날씨보기-dokdox.com 에서 확인해보세요.지금 당징 무료날씨정보를 확인할수 있습니다1',
-                });
-            } else if (Notification.permission !== 'denied') {
-                // 알림 권한 요청하기
-                Notification.requestPermission().then(permission => {
-                    if (permission === 'granted') {
-                        new Notification('Dokdox Weather 알림', {
-                            body: '오늘의 날씨를 확인해보세요!',
-                            
-                        });
-                    }
-                });
-            }
-        });
 
-        // 알림 버튼 기능
+
+       
 
     </script>
 </body>
