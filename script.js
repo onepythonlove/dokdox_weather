@@ -1,4 +1,4 @@
-const apiKey = "76a1b16b1ed8357b2830f5684250eaa4"; // OpenWeatherMap API 키
+const apiKey = "76a1b16b1ed8357b2830f5684250eaa4"; 
 
 
 function success({ coords }) {
