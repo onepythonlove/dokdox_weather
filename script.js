@@ -320,6 +320,6 @@ function scl() {
 
 
 addEventListener("click",()=>{
-  document.querySelector("body").style.backgroundColor = "black"
-  document.querySelector("body").style.color = "white"
+    const element = document.body;
+    element.classList.toggle("dark-mode");
 })
