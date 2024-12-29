@@ -319,7 +319,7 @@ function scl() {
 
 
 
-addEventListener("click",()=>{
+document.getElementById("darkmodetoggle").addEventListener("click",()=>{
     const element = document.body;
     element.classList.toggle("dark-mode");
 })
