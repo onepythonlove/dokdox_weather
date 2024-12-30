@@ -32,7 +32,7 @@ body{
     }
   }
 #result,#searchresult{
-    background-color: rgb(135, 185, 153);
+    border: rgb(78, 99, 60) solid 1.45pt;
     text-align: center;
     border-radius: 4pt;
     color:White;
@@ -42,7 +42,7 @@ body{
     border:rgb(57, 67, 71) 1.56pt solid;
 }
 .forecast,.openmeteoc{
-    border:gray 1.56pt solid;
+    border: rgb(78, 99, 60) solid 1.45pt;
     border-radius: 4pt;
 }
 .air{
@@ -78,7 +78,7 @@ button{
 }
 #pp{
     color:rgb(0, 0, 0);
-    border:1.15pt black solid
+    border: rgb(78, 99, 60) solid 1.45pt;
 }
 #att{
     display: none;
@@ -102,9 +102,12 @@ img{
   }
 
   .he {
-    grid-column: span 1; /* 4칸을 차지 */
+    grid-column: span 1; 
+    border: rgb(78, 99, 60) solid 1.45pt;
+    padding:3.99mm
   }
+ 
   .dark-mode{
-    background-color: black;
+    background-color: rgb(21, 24, 24);
     color:white;
   }
