@@ -152,22 +152,15 @@ function success({ coords }) {
 
 
 
-    fetch(a)
-    .then(response => response.json())
-    .then(data => {
+   
 
 
 
-     document.getElementById("forecast03-op").innerHTML = `
-     <p>Open-meteo api 를 이용하는 더 많은 예보를 확인할려면 모델을 변경해보세요.</p>
-     <p>오류</p>
-     `
-      
 
       
   
   
-    })
+    
 
 
 
@@ -190,76 +183,225 @@ function success({ coords }) {
     })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  // openweathermap api 이용
-  fetch(url)
+    fetch(a)
     .then(response => response.json())
     .then(data => {
-      // 3시간 간격으로 날씨 예보를 보여주는 부분
-      const forecast1 = document.getElementById("forecast1");
-      const forecast2 = document.getElementById("forecast2");
-      const forecast3 = document.getElementById("forecast3");
-      const forecast4 = document.getElementById("forecast4");
-      const forecast0 = document.getElementById("forecast0");
-      const forecast03 = document.getElementById("forecast03")
-       
-      // 멘트를 js 에 포함
-      forecast1.innerHTML = `
-        <p> ${data.list[10].dt_txt}</p>
-        <h2>${data.list[10].weather[0].description}</h2>
-        <p>${data.list[10].weather[0].main}</p>
-        <h3> ${data.list[10].main.feels_like}°C</h3>
-      `;
+ 
 
-      // 두 번째 예보 (3시간 후 예보)
-      forecast2.innerHTML = `
-        <p> ${data.list[24].dt_txt}</p>
-        <h2>${data.list[24].weather[0].description}</h2>
-        <p>${data.list[24].weather[0].main}</p>
-        <h3> ${data.list[24].main.feels_like}°C</h3>
-      `;
 
+     document.getElementById("7").innerHTML = `
+     <h3>${data.hourly.time[7]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[7]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[7]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[7]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[7]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[7]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[7]}m/s</h2>
+
+     `
+      
+
+      
+  
+  
+    })
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("10").innerHTML = `
+     <h3>${data.hourly.time[10]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[10]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[10]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[10]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[10]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[10]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[10]}m/s</h2>
+     `
+      
+
+      
+  
+  
+    })
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("14").innerHTML = `
+     <h3>${data.hourly.time[14]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[14]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[14]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[14]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[14]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[14]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[14]}m/s</h2>
+     `
+      
+
+      
+  
+  
+    })
+
+
+
+
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("8").innerHTML = `
+     <h3>${data.hourly.time[8]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[8]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[8]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[8]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[8]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[8]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[8]}m/s</h2>
+     `
+      
+
+      
+  
+  
+    })
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("20").innerHTML = `
+     <h3>${data.hourly.time[20]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[20]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[20]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[20]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[20]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[20]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[20]}m/s</h2>
+     `
+      
+
+      
+  
+  
+    })
+
+
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("22").innerHTML = `
+     <h3>${data.hourly.time[22]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[22]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[22]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[22]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[22]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[22]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[22]}m/s</h2>
+     `
+      
+
+      
+  
+  
+    })
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("29").innerHTML = `
+      <h3>${data.hourly.time[29]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[29]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[29]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[29]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[29]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[29]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[29]}m/s</h2>
+     `
      
-      forecast3.innerHTML = `
-        <p> ${data.list[30].dt_txt}</p>
-        <h2>${data.list[30].weather[0].description}</h2>
-        <p>${data.list[30].weather[0].main}</p>
-        <h3> ${data.list[30].main.feels_like}°C</h3>
-      `;
 
-   
-      forecast4.innerHTML = `
-        <p>${data.list[38].dt_txt}</p>
-        <h2>${data.list[38].weather[0].description}</h2>
-        <p>${data.list[38].weather[0].main}</p>
-        <h3> ${data.list[38].main.feels_like}°C</h3>
-      `;
+      
+  
+  
+    })
 
-      forecast0.innerHTML = `
-      <p>${data.list[5].dt_txt}</p>
-      <h2>${data.list[5].weather[0].description}</h2>
-      <p>${data.list[5].weather[0].main}</p>
-      <h3> ${data.list[5].main.feels_like}°C</h3>
-    `;
 
-    forecast03.innerHTML = `
-    <p>${data.list[8].dt_txt}</p>
-    <h2>${data.list[8].weather[0].description}</h2>
-    <p>${data.list[8].weather[0].main}</p>
-    <h3> ${data.list[8].main.feels_like}°C</h3>
-  `;
-    });
+
+
+
+
+
+
+    
     //기타기능들
     document.querySelector("progress").value = "100"
     document.querySelector("body").style.display = "block"

@@ -32,9 +32,20 @@ function success({ coords }) {
 
 
      document.getElementById("7").innerHTML = `
-     <p>${data.hourly.time[7]}</p>
+     <h3>${data.hourly.time[7]}</h3>
      <p>온도</p>
-     <h2>${data.hourly.temperature_2m[7]}</h2>
+     <h2>${data.hourly.temperature_2m[7]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[7]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[7]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[7]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[7]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[7]}m/s</h2>
+
      `
       
 
@@ -51,9 +62,19 @@ function success({ coords }) {
 
 
      document.getElementById("10").innerHTML = `
-     <p>${data.hourly.time[10]}</p>
+     <h3>${data.hourly.time[10]}</h3>
      <p>온도</p>
-     <h2>${data.hourly.temperature_2m[10]}</h2>
+     <h2>${data.hourly.temperature_2m[10]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[10]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[10]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[10]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[10]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[10]}m/s</h2>
      `
       
 
@@ -70,9 +91,19 @@ function success({ coords }) {
 
 
      document.getElementById("14").innerHTML = `
-     <p>${data.hourly.time[14]}</p>
+     <h3>${data.hourly.time[14]}</h3>
      <p>온도</p>
-     <h2>${data.hourly.temperature_2m[14]}</h2>
+     <h2>${data.hourly.temperature_2m[14]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[14]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[14]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[14]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[14]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[14]}m/s</h2>
      `
       
 
@@ -94,9 +125,19 @@ function success({ coords }) {
 
 
      document.getElementById("8").innerHTML = `
-     <p>${data.hourly.time[8]}</p>
+     <h3>${data.hourly.time[8]}</h3>
      <p>온도</p>
-     <h2>${data.hourly.temperature_2m[8]}</h2>
+     <h2>${data.hourly.temperature_2m[8]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[8]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[8]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[8]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[8]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[8]}m/s</h2>
      `
       
 
@@ -112,11 +153,83 @@ function success({ coords }) {
 
 
      document.getElementById("20").innerHTML = `
-     <p>${data.hourly.time[20]}</p>
+     <h3>${data.hourly.time[20]}</h3>
      <p>온도</p>
-     <h2>${data.hourly.temperature_2m[20]}</h2>
+     <h2>${data.hourly.temperature_2m[20]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[20]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[20]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[20]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[20]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[20]}m/s</h2>
      `
       
+
+      
+  
+  
+    })
+
+
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("22").innerHTML = `
+     <h3>${data.hourly.time[22]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[22]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[22]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[22]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[22]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[22]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[22]}m/s</h2>
+     `
+      
+
+      
+  
+  
+    })
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("29").innerHTML = `
+      <h3>${data.hourly.time[29]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[29]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[29]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[29]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[29]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[29]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[29]}m/s</h2>
+     `
+     
 
       
   
@@ -135,3 +248,4 @@ function getUserLocation() {
   
   
   getUserLocation();
+
