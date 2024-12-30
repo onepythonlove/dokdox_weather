@@ -135,7 +135,7 @@ function success({ coords }) {
     fetch(a)
     .then(response => response.json())
     .then(data => {
-      // 3시간 간격으로 날씨 예보를 보여주는 부분
+ 
 
 
      document.getElementById("snowfall").innerHTML = `
@@ -148,6 +148,29 @@ function success({ coords }) {
   
   
     })
+
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+
+
+
+     document.getElementById("forecast03-op").innerHTML = `
+     <p>Open-meteo api 를 이용하는 더 많은 예보를 확인할려면 모델을 변경해보세요.</p>
+     <p>오류</p>
+     `
+      
+
+      
+  
+  
+    })
+
+
+
 
     fetch(a)
     .then(response => response.json())
@@ -321,5 +344,8 @@ function scl() {
 
 document.getElementById("darkmodetoggle").addEventListener("click",()=>{
     const element = document.body;
+    const buttontext = document.getElementById("darkmodetoggle")
     element.classList.toggle("dark-mode");
+    buttontext.innerText = "다크모드/라이트 모드"
+    
 })
