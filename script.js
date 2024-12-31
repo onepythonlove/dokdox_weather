@@ -205,21 +205,6 @@ function success({ coords }) {
      <h2>${data.hourly.wind_speed_10m[7]}m/s</h2>
 
      `
-    const tempx =data.hourly.temperature_2m[7]
-    
-    if (tempx < 0) {
-      document.getElementById("7").style.borderColor = "blue";
-    } 
-    else if (tempx > 0 && tempx <= 10) {
-      document.getElementById("7").style.borderColor = "purple";
-    } 
-    else if (tempx > 10 && tempx <= 19) {
-      document.getElementById("7").style.borderColor = "green";
-    } else if (tempx > 19 && tempx <=30 ) {
-      document.getElementById("7").style.borderColor = "orange";
-    } else {
-      document.getElementById("7").style.borderColor = "red";
-    }
       
   
   
