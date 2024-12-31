@@ -205,8 +205,21 @@ function success({ coords }) {
      <h2>${data.hourly.wind_speed_10m[7]}m/s</h2>
 
      `
-      
-
+    const tempx =data.hourly.temperature_2m[7]
+    
+    if (tempx < 0) {
+      document.getElementById("7").style.borderColor = "blue";
+    } 
+    else if (tempx > 0 && tempx <= 10) {
+      document.getElementById("7").style.borderColor = "purple";
+    } 
+    else if (tempx > 10 && tempx <= 19) {
+      document.getElementById("7").style.borderColor = "green";
+    } else if (tempx > 19 && tempx <=30 ) {
+      document.getElementById("7").style.borderColor = "orange";
+    } else {
+      document.getElementById("7").style.borderColor = "red";
+    }
       
   
   
@@ -394,6 +407,68 @@ function success({ coords }) {
   
     })
 
+
+
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("31").innerHTML = `
+      <h3>${data.hourly.time[31]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[31]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[31]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[31]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[31]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[31]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[31]}m/s</h2>
+     `
+     
+
+      
+  
+  
+    })
+
+
+
+    fetch(a)
+    .then(response => response.json())
+    .then(data => {
+ 
+
+
+     document.getElementById("35").innerHTML = `
+      <h3>${data.hourly.time[35]}</h3>
+     <p>온도</p>
+     <h2>${data.hourly.temperature_2m[35]}°C</h2>
+     <p>강수</p>
+     <h2>${data.hourly.rain[35]}mm</h2>
+     <p>강우</p>
+     <h2>${data.hourly.showers[35]}mm</h2>
+     <p>눈</p>
+     <h2>${data.hourly.snowfall[35]}cm</h2>
+     <p>눈의 깊이</p>
+     <h2>${data.hourly.snow_depth[35]}m</h2>
+     <p>풍속</p>
+     <h2>${data.hourly.wind_speed_10m[35]}m/s</h2>
+     `
+     
+
+      
+  
+  
+    })
 
     
     

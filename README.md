@@ -1,6 +1,6 @@
 # dokdox_weather
-이 날씨사이트를 이용해주셔서 대단히 감사합니다.
--사용된 출처
+이 프로젝트를 이용해주셔서 대단히 감사합니다.또는 기여해주셔서 대단히 감사합니다.
+-사용된 모델은 다음과 같습니다:
 (모델)
 -openmeteo 의 weather forecast api
 -openweathermap api

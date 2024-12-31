@@ -103,8 +103,8 @@ img{
 
   .he {
     grid-column: span 1; 
-    border: rgb(78, 99, 60) solid 1.45pt;
-    padding:3.99mm
+    border: rgb(78, 99, 60) solid 2.45pt;
+    padding:5.99mm
   }
  
   .dark-mode{
