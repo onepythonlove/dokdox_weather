@@ -14,8 +14,8 @@ function success({ coords }) {
   //open meteo api
   const a = 'https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&current=temperature_2m,relative_humidity_2m,rain,showers,snowfall,wind_speed_10m,wind_direction_10m,wind_gusts_10m&hourly=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,rain,showers,snowfall,snow_depth,wind_speed_10m,wind_direction_10m,temperature_80m,soil_temperature_0cm,soil_temperature_6cm&wind_speed_unit=ms&timezone=Asia%2FTokyo&forecast_days=16'
 //json 으로 받고 표시
+    document.querySelector("body").style.display = "block"
 
-   document.querySelector("progress").value = "60"
   fetch(airurl)
     .then(response => response.json())
     .then(data => {
@@ -395,16 +395,7 @@ function success({ coords }) {
     })
 
 
-
-
-
-
-
-
     
-    //기타기능들
-    document.querySelector("progress").value = "100"
-    document.querySelector("body").style.display = "block"
     
 }
 
