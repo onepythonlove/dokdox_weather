@@ -38,6 +38,10 @@ body{
     color:White;
     border:3.15pt black solid
 }
+#ti{
+    text-decoration: none;
+    color: black;
+}
 #moreresult{
     border:rgb(57, 67, 71) 1.56pt solid;
 }

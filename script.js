@@ -427,6 +427,15 @@ function success({ coords }) {
 
 
 
+
+
+
+
+
+
+
+
+
     fetch(a)
     .then(response => response.json())
     .then(data => {
@@ -456,6 +465,35 @@ function success({ coords }) {
     })
 
     
+
+
+
+
+
+//일출시간 및 일몰 시간기능구현
+
+fetch(urlx)
+    .then(response => response.json())
+    .then(data => {
+        // 일출 시간 변환
+        const oldsunrise = new Date(data.sys.sunrise * 1000);  // 유닉스 타임스탬프 -> Date 객체
+        const newsunrise = oldsunrise.toLocaleString();  // 기본 로케일 형식으로 변환
+
+        // 일몰 시간 변환
+        const oldsunset = new Date(data.sys.sunset * 1000);  // 유닉스 타임스탬프 -> Date 객체
+        const newsunset = oldsunset.toLocaleString();  // 기본 로케일 형식으로 변환
+
+        // HTML에 출력
+        document.getElementById("t").innerHTML = `
+            <p>유용한 정보 - 일출/일몰시간</p>
+            <p>일출</p>
+            <h3>${newsunrise}</h3>
+            <p>일몰</p>
+            <h3>${newsunset}</h3>
+        `;
+    })
+ 
+
     
 }
 
