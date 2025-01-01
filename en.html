@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,16 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/gridlex@1.0.4/dist/gridlex.min.css" rel="stylesheet">
 </head>
 <body>
-    <a href="en.html">English</a>
-    <h5 id = "darkmodetoggle">다크모드를 시작하기</h5>
+    <h5 id = "darkmodetoggle">start darkmode </h5>
     <a id="att" onclick="scl()"></a>
     <br>
     <div id = "time" class = "openmeteoc"></div>
     <h1 class = "h1">Dokdox-weather for you</h1>
-    <p id="pp">지역: 현재 지역</p>
+    <p id="pp">  current location</p>
     <a id = "ti" href="index.html"><p id = "title">Dokdox|weather for you</p></a>
-    <input type="text" id="searchvalue" placeholder="지역명을 영어로 임력(예:busan,ulsan,seoul 등...)" onkeypress="search()">
-    <button onclick="search()">검색</button>
+    <input type="text" id="searchvalue" placeholder="Type city now." onkeypress="search()">
+    <button onclick="search()">search</button>
     <br>
     <br>
     <div id="searchresult"></div>
@@ -36,12 +35,12 @@
         
        <br>
         <div id="moreresult"></div>
-        <h2>공기질</h2>
+        <h2>Airquality</h2>
         <div id="air" class="air"></div>
         <br>
             <div class = "openmeteoc" id = "t"></div>
 
-        <h2>예측</h2>
+        <h2>Forecast</h2>
     
     
         <div class = "grid">
@@ -63,7 +62,6 @@
 
 
 
-    <script src="script.js"></script>
-
+    <script src="en.js"></script>
 </body>
 </html>
